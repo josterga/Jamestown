@@ -1,0 +1,18 @@
+# this is the order_items topic
+joins:
+  alias: {}
+  users: {}
+  inventory_items:
+    products:
+      distribution_centers: {}
+
+views:
+  alias:
+    hidden: true
+
+relationships:
+  - join_from_view: order_items
+    join_to_view: order_items
+    join_to_view_as: alias
+    join_type: always_left
+    on_sql: ${order_items.id} = ${order_items.id}

@@ -1,0 +1,36 @@
+# Reference this view as order_items
+schema: public
+
+# __omni_extension_placeholder__
+dimensions:
+  sale_price: {}
+  status: {}
+  created_at: {}
+  returned_at: {}
+  shipped_at: {}
+  delivered_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  order_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  inventory_item_id:
+    format: ID
+
+  attribute:
+    sql: "{{omni_attributes.region}}"
+
+measures:
+  count:
+    aggregate_type: count
+
+  count_copy:
+    label: Order Items Count Copy
+    format: NUMBER_0
+    aggregate_type: count

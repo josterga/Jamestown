@@ -1,0 +1,14 @@
+# ai_context: when the prompt references the current user like 'I' or 'my', use
+#   users.your_email to filter based on their email
+ai_context: "When users ask for their own data (using 'I', 'my', 'me'), use the
+  user_attribute filter type on email fields:{'users.email': {'user_attribute':
+  'email'        }}This automatically matches the current user's email without
+  requiring manual input."
+
+fiscal_month_offset: 2
+
+dynamic_schemas:
+  d_schem:
+    from_schema: private
+    user_attribute: email
+#@

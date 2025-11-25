@@ -1,0 +1,22 @@
+# Reference this view as products
+schema: public
+
+dimensions:
+  cost: {}
+  category: {}
+  name: {}
+  brand: {}
+  department: {}
+  sku: {}
+  retail_price: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  distribution_center_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

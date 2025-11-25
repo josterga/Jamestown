@@ -1,0 +1,4 @@
+# this is the Users topic
+base_view: users
+
+joins: {}

@@ -1,0 +1,25 @@
+# Reference this view as users
+schema: public
+
+dimensions:
+  first_name: {}
+  last_name: {}
+  email: {}
+  age: {}
+  city: {}
+  state: {}
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  gender: {}
+  created_at: {}
+  traffic_source: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count
