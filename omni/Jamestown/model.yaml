@@ -15,6 +15,11 @@ dynamic_schemas:
   d_schem:
     from_schema: private
     user_attribute: email
+
 #@
 #a change
 #another change
+access_grants:
+  region_access:
+    user_attribute: region
+    allowed_values: [ California, South, East, West ]
