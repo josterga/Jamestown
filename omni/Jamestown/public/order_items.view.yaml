@@ -12,13 +12,16 @@ dimensions:
 
   id:
     format: ID
+    group_label: a
     primary_key: true
 
   order_id:
     format: ID
+    group_label: a > b
 
   user_id:
     format: ID
+    group_label: a > c
 
   inventory_item_id:
     format: ID
