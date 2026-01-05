@@ -17,6 +17,10 @@ dimensions:
   distribution_center_id:
     format: ID
 
+  cost_copy:
+    sql: cost
+    label: Cost Copy
+
 measures:
   count:
     aggregate_type: count
