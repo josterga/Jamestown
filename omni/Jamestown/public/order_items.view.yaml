@@ -8,7 +8,10 @@ dimensions:
   created_at: {}
   returned_at: {}
   shipped_at: {}
-  delivered_at: {}
+
+  delivered_at:
+    sql: delivered_at
+    label: Delivered At Copy 0
 
   id:
     format: ID
