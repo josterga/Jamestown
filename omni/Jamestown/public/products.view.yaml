@@ -5,7 +5,6 @@ dimensions:
   cost: {}
   category: {}
   name: {}
-  brand: {}
   department: {}
   sku: {}
   retail_price: {}
