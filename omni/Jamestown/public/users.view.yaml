@@ -6,7 +6,6 @@ dimensions:
   last_name: {}
   email: {}
   age: {}
-  city: {}
   state: {}
   country: {}
   zip: {}
@@ -15,6 +14,10 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
+
+  city_new:
+    sql: city
+    aliases: [ city ]
 
   id:
     format: ID
