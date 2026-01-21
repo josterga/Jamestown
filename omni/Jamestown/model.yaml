@@ -19,4 +19,4 @@ dynamic_schemas:
 #@
 #a change
 #another change
-ai_chat_topics: [ Order Items, Users ]
+ai_chat_topics: [ order_items, users ]
