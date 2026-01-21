@@ -34,6 +34,9 @@ dimensions:
 
   inventory_item_id:
     format: ID
+    links:
+      - url: https://www.${order_items.attribute}.omni.co
+        label: LINK
 
   attribute:
     sql: "{{omni_attributes.region}}"
