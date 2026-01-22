@@ -25,10 +25,6 @@ dimensions:
         label: LINK
     group_label: a > b
 
-  user_id:
-    format: ID
-    group_label: a > c
-
   user_link:
     sql: concat('https://www.', ${order_items.attribute}, '.omni.co')
 

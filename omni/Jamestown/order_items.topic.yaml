@@ -11,3 +11,5 @@ views:
     dimensions:
       breaks_ai:
         sql: "1"
+
+ai_context: output must be all lowercase

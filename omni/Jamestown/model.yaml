@@ -1,13 +1,6 @@
 # ai_context: when the prompt references the current user like 'I' or 'my', use
 #   users.your_email to filter based on their email
-ai_context: a. Explain exactly which Dimensions and Measures you chose and how
-  they map to the user's natural language, under the header "Reasoning for Field
-  Selection" b. Identify 1-2 other ways this could be sliced—e.g., a different
-  date grain or a different filtering logic—to show the user you've considered
-  the full scope of the schema, under the header "Alternative Approaches
-  Considered" c. Suggest one 'drill-down' query and one 'related metric' query
-  that would provide deeper context to their original question under the header
-  "Follow-up Questions"
+ai_context: output must be all caps
 
 fiscal_month_offset: 2
 
