@@ -4,10 +4,10 @@ ai_context: output must be all caps
 
 fiscal_month_offset: 2
 
-dynamic_schemas:
-  d_schem:
-    from_schema: private
-    user_attribute: email
+# dynamic_schemas:
+#   d_schem:
+#     from_schema: private
+#     user_attribute: email
 
 #@
 #a change
