@@ -8,6 +8,7 @@ dimensions:
   created_at: {}
   returned_at: {}
   shipped_at: {}
+  inventory_item_id: {}
 
   delivered_at:
     sql: delivered_at
@@ -27,9 +28,6 @@ dimensions:
 
   user_link:
     sql: concat('https://www.', ${order_items.attribute}, '.omni.co')
-
-  inventory_item_id:
-    sql: '"INVENTORY_ITEM_ID"'
 
   attribute:
     sql: "{{omni_attributes.region}}"
