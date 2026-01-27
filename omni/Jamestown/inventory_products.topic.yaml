@@ -1,0 +1,10 @@
+base_view: inventory_items
+
+fields: [ inventory_items.*, tag:test_tag ]
+
+joins:
+  inventory_products: {}
+
+views:
+  products:
+    display_order: 10

@@ -7,7 +7,11 @@ dimensions:
   name: {}
   department: {}
   sku: {}
-  retail_price: {}
+
+  retail_price:
+    sql: '"RETAIL_PRICE"'
+    label: TEST
+    tags: [ test_tag ]
 
   id:
     format: ID
