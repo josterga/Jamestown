@@ -1,5 +1,7 @@
 base_view: products
 
+fields: [ products.*, tag:has_tag ]
+
 joins:
   distribution_centers: {}
 

@@ -8,7 +8,10 @@ dimensions:
   created_at: {}
   returned_at: {}
   shipped_at: {}
-  inventory_item_id: {}
+
+  inventory_item_id:
+    sql: '"INVENTORY_ITEM_ID"'
+    tags: [ has_tag ]
 
   delivered_at:
     sql: delivered_at
