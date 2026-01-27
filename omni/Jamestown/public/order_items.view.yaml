@@ -29,10 +29,7 @@ dimensions:
     sql: concat('https://www.', ${order_items.attribute}, '.omni.co')
 
   inventory_item_id:
-    format: ID
-    links:
-      - url: https://www.${order_items.attribute}.omni.co
-        label: LINK
+    sql: '"INVENTORY_ITEM_ID"'
 
   attribute:
     sql: "{{omni_attributes.region}}"
