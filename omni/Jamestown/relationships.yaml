@@ -11,6 +11,7 @@
   on_sql: ${inventory_items.product_id} = ${inventory_products.id}
   relationship_type: assumed_many_to_one
 
+#test
 - join_from_view: order_items
   join_to_view: users
   join_type: always_left
