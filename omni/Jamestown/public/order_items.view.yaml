@@ -11,7 +11,7 @@ dimensions:
 
   inventory_item_id:
     sql: '"INVENTORY_ITEM_ID"'
-    tags: [ has_tag ]
+    tags: [ test_tag ]
 
   delivered_at:
     sql: delivered_at
