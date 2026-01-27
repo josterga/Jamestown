@@ -5,8 +5,11 @@ dimensions:
   cost: {}
   category: {}
   name: {}
-  department: {}
   sku: {}
+
+  department:
+    label: TEST 2
+    tags: [ test_tag ]
 
   retail_price:
     sql: '"RETAIL_PRICE"'
