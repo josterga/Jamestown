@@ -8,3 +8,6 @@ joins:
 views:
   products:
     display_order: 10
+
+  order_items:
+    display_order: 5
