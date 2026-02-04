@@ -1,10 +1,3 @@
-base_view_label: topic
-label: group
-group_label: topic
-description: topic
-
-always_where_sql: ${order_items.status} = 'Completed'
-
 # this is the order_items topic
 joins:
   alias: {}
