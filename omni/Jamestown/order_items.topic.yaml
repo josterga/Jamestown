@@ -1,15 +1,8 @@
 # this is the order_items topic
 joins:
-  alias: {}
   users: {}
   inventory_items:
     products:
       distribution_centers: {}
-
-views:
-  order_items:
-    dimensions:
-      breaks_ai:
-        sql: "1"
 
 ai_context: output must be all lowercase
