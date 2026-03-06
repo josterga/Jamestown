@@ -25,3 +25,8 @@ dimensions:
 measures:
   count:
     aggregate_type: count
+
+  count_copy:
+    label: Order Items Count Copy
+    format: NUMBER_0
+    aggregate_type: count
