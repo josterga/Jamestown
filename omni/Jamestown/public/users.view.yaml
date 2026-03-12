@@ -26,6 +26,9 @@ dimensions:
   trademark_name:
     sql: CONCAT(${users.first_name}, '™', ${users.last_name})
 
+  omni_user_email:
+    sql: "{{omni_attributes.omni_user_email}}"
+
 measures:
   count:
     aggregate_type: count
