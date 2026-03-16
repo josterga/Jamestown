@@ -22,6 +22,10 @@ dimensions:
   inventory_item_id:
     format: ID
 
+  region:
+    sql: "{{omni_attributes.region}}"
+    required_access_grants: [ embed_grant ]
+
 measures:
   count:
     aggregate_type: count

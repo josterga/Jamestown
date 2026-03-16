@@ -4,6 +4,11 @@ ai_context: output must be all caps
 
 fiscal_month_offset: 2
 
+access_grants:
+  embed_grant:
+    user_attribute: region
+    allowed_values: [ California ]
+
 # dynamic_schemas:
 #   d_schem:
 #     from_schema: private
