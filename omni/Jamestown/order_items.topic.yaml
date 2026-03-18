@@ -85,3 +85,17 @@ sample_queries:
       fields: [ omni_period_pivot, order_items.status, order_items.count ]
       version: 0
       visType: basic
+  10 to the 4:
+    query:
+      fields: [ order_items.status, order_items.count, calc_1 ]
+      base_view: order_items
+      calculations:
+        calc_1:
+          sql: ${order_items.count} OMNI_FX_MULTIPLY POWER(10, 4)
+          label: Calculation
+      limit: 1000
+      sorts:
+        - field: order_items.count
+          desc: true
+      topic: order_items
+    description: 10 to the 4
