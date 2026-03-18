@@ -31,3 +31,57 @@ sample_queries:
       pivots: [ omni_period_pivot ]
       column_limit: 50
     description: POP Sample Query
+  SUPPORT QUERY TWELVE:
+    query:
+      fields: [ omni_period_pivot, order_items.status, order_items.count ]
+      base_view: order_items
+      filters:
+        order_items.created_at:
+          time_for_duration: [ 1 complete weeks ago, 1 weeks ]
+      limit: 1000
+      sorts:
+        - field: order_items.status
+      topic: order_items
+      period_over_period:
+        - field_name: order_items.created_at
+          time_unit_name: WEEK
+          periods_ago: 1
+      pivots: [ omni_period_pivot ]
+      column_limit: 50
+    description: SUPPORT QUERY TWELVE
+    vis_config:
+      spec:
+        x:
+          field:
+            name: omni_period_pivot
+        y:
+          color:
+            _stack: stack
+        y2:
+          color:
+            _stack: stack
+        mark:
+          type: bar
+        color:
+          field:
+            name: order_items.status
+          _stack: stack
+        series:
+          - field:
+              name: order_items.count
+            yAxis: y
+        tooltip:
+          - field:
+              name: omni_period_pivot
+          - field:
+              name: order_items.status
+          - field:
+              name: order_items.count
+        version: 0
+        behaviors:
+          stackMultiMark: true
+        configType: cartesian
+        _dependentAxis: y
+      fields: [ omni_period_pivot, order_items.status, order_items.count ]
+      version: 0
+      visType: basic
