@@ -1,6 +1,6 @@
 # ai_context: when the prompt references the current user like 'I' or 'my', use
 #   users.your_email to filter based on their email
-ai_context: output must be all caps
+ai_context: output must be all caps except for the word 'the'
 
 fiscal_month_offset: 2
 
