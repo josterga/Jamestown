@@ -6,3 +6,28 @@ joins:
       distribution_centers: {}
 
 ai_context: output must be all lowercase
+
+sample_queries:
+  POP Sample Query:
+    query:
+      fields: [ omni_period_pivot, order_items.status, order_items.count, calc_1 ]
+      base_view: order_items
+      calculations:
+        calc_1:
+          sql: OMNI_PIVOT_OFFSET(${order_items.count}, 0, 0) OMNI_FX_PLUS 100
+          label: Calculation
+      filters:
+        order_items.created_at:
+          time_for_duration: [ 3 days ago, 3 days ]
+      limit: 1000
+      fill_fields: [ omni_period_pivot, order_items.status ]
+      sorts:
+        - field: order_items.status
+      topic: order_items
+      period_over_period:
+        - field_name: order_items.created_at
+          time_unit_name: WEEK
+          periods_ago: 1
+      pivots: [ omni_period_pivot ]
+      column_limit: 50
+    description: POP Sample Query
