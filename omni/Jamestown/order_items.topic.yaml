@@ -6,24 +6,3 @@ joins:
       distribution_centers: {}
 
 ai_context: output must be all lowercase
-
-sample_queries:
-  PoP Sample Query:
-    query:
-      fields: [ omni_period_pivot, order_items.status, order_items.count ]
-      base_view: order_items
-      filters:
-        order_items.created_at:
-          time_for_duration: [ 3 days ago, 3 days ]
-      limit: 1000
-      sorts:
-        - field: order_items.count
-          desc: true
-      topic: order_items
-      period_over_period:
-        - field_name: order_items.created_at
-          time_unit_name: WEEK
-          periods_ago: 1
-      pivots: [ omni_period_pivot ]
-      column_limit: 50
-    description: PoP Sample Query
