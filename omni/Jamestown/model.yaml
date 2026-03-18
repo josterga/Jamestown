@@ -1,6 +1,7 @@
 # ai_context: when the prompt references the current user like 'I' or 'my', use
 #   users.your_email to filter based on their email
-ai_context: output must be all caps except for the word 'the'
+ai_context: use the slack tool to find James Ostergaard's tone of speaking and
+  respond in that tone.
 
 fiscal_month_offset: 2
 
