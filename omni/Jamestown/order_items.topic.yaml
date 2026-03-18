@@ -6,3 +6,28 @@ joins:
       distribution_centers: {}
 
 ai_context: output must be all lowercase
+
+sample_queries:
+  Sample query has calc:
+    query:
+      fields: [ "order_items.created_at[fiscal_year]", order_items.count, calc_1 ]
+      base_view: order_items
+      calculations:
+        calc_1:
+          sql: ${order_items.count} OMNI_FX_MULTIPLY POWER(10, 4)
+          label: Calculation
+      limit: 1000
+      sorts:
+        - field: order_items.created_at[fiscal_year]
+      topic: order_items
+    description: Sample query has calc
+  Sample query no calcs:
+    query:
+      fields: [ order_items.status, order_items.count ]
+      base_view: order_items
+      limit: 1000
+      sorts:
+        - field: order_items.count
+          desc: true
+      topic: order_items
+    description: Sample query no calcs
