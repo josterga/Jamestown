@@ -8,7 +8,6 @@ dimensions:
   returned_at: {}
   shipped_at: {}
   delivered_at: {}
-  region: {}
 
   id:
     format: ID
@@ -22,6 +21,9 @@ dimensions:
 
   inventory_item_id:
     format: ID
+
+  region:
+    sql: "{{omni_attributes.region}}"
 
 measures:
   count:
