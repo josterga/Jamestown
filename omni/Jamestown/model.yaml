@@ -1,5 +1,3 @@
-ai_context: this should break?
-
 # ai_context: when the prompt references the current user like 'I' or 'my', use
 #   users.your_email to filter based on their email
 fiscal_month_offset: 2
