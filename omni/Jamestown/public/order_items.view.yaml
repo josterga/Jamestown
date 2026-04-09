@@ -24,6 +24,7 @@ dimensions:
 
   region:
     sql: "{{omni_attributes.region}}"
+    label: Branchb
 
 measures:
   count:
