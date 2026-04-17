@@ -1,11 +1,5 @@
 base_view: inventory_items
 
-fields: [ inventory_items.*, tag:test_tag ]
-
 joins:
-  inventory_products: {}
-
-views:
   order_items:
-    display_order: 5
-#here's another comment that I'll merge
+    parcel_county: {}

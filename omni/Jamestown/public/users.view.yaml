@@ -6,7 +6,6 @@ dimensions:
   last_name: {}
   email: {}
   age: {}
-  state: {}
   country: {}
   zip: {}
   latitude: {}
@@ -14,6 +13,10 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
+
+  state:
+    suggest_from_field: users.state
+    suggest_from_topic: users
 
   city_new:
     sql: city
