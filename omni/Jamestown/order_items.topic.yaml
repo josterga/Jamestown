@@ -6,6 +6,28 @@ joins:
     products:
       distribution_centers: {}
 
+views:
+  order_items:
+    ai_context: Individual line items within customer orders, including sale price,
+      status, and key timestamps like created, shipped, delivered, and returned
+      dates.
+
+  users:
+    ai_context: Customer profiles with demographic details such as name, age,
+      gender, location, and acquisition traffic source.
+
+  inventory_items:
+    ai_context: Physical inventory records tracking product stock, including cost,
+      product attributes, and timestamps for when items were created or sold.
+
+  products:
+    ai_context: Product catalog containing item names, categories, departments,
+      SKUs, retail prices, and cost information.
+
+  distribution_centers:
+    ai_context: Warehouse and fulfillment center locations identified by name and
+      geographic coordinates.
+
 ai_context: output must be all lowercase - and I'm making changes here that
   override branch-a which is uncommitted
 
