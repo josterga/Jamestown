@@ -1,0 +1,12 @@
+# Reference this view as query_view_two
+label: QUERY VIEW TWO
+
+schema: public
+sql: SELECT id FROM ORDER_ITEMS
+
+dimensions:
+  id: {}
+
+measures:
+  count:
+    aggregate_type: count

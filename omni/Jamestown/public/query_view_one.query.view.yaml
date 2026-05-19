@@ -1,0 +1,12 @@
+# Reference this view as query_view_one
+label: Query View One
+
+schema: public
+sql: SELECT id FROM USERS
+
+dimensions:
+  id: {}
+
+measures:
+  count:
+    aggregate_type: count
