@@ -1,0 +1,11 @@
+# Reference this view as repro_view_2
+schema: public
+
+dimensions:
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count
