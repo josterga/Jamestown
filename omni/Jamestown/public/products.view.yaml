@@ -23,6 +23,10 @@ dimensions:
   distribution_center_id:
     format: ID
 
+  category_copy:
+    sql: category
+    label: Category Copy
+
 measures:
   count:
     aggregate_type: count
