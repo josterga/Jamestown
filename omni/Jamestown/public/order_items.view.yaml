@@ -6,8 +6,11 @@ dimensions:
   status: {}
   created_at: {}
   returned_at: {}
-  shipped_at: {}
   delivered_at: {}
+
+  shipped_at:
+    sql: shipped_at
+    label: Shipped At asdfg
 
   id:
     format: ID
@@ -31,6 +34,11 @@ measures:
     aggregate_type: count
 
   count_copy:
+    label: Order Items Count Copy
+    format: NUMBER_0
+    aggregate_type: count
+
+  count_copy_1:
     label: Order Items Count Copy
     format: NUMBER_0
     aggregate_type: count
