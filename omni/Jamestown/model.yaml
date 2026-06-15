@@ -6,6 +6,12 @@ access_grants:
   embed_grant:
     user_attribute: region
     allowed_values: [ California ]
+  entity_a:
+    user_attribute: duplicate_embedEmail
+    allowed_values: [ user_a ]
+  entity_b:
+    user_attribute: duplicate_embedEmail
+    allowed_values: [ user_b ]
 
 # dynamic_schemas:
 #   d_schem:

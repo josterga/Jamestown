@@ -1,0 +1,9 @@
+base_view: order_items
+
+required_access_grants: [ entity_a ]
+
+joins:
+  inventory_items:
+    products:
+      distribution_centers: {}
+    inventory_products: {}
