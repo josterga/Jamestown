@@ -26,3 +26,11 @@ dimensions:
 measures:
   count:
     aggregate_type: count
+
+  name_count_distinct:
+    sql: ${products.name}
+    aggregate_type: count_distinct
+
+  category_count_distinct:
+    sql: ${products.category}
+    aggregate_type: count_distinct
