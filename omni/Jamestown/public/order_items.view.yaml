@@ -9,6 +9,18 @@ dimensions:
   shipped_at: {}
   delivered_at: {}
 
+  status_groups:
+    sql: ${order_items.status}
+    groups:
+      - filter:
+          is: Cancelled
+        name: Cancelled
+      - filter:
+          is: Returned
+        name: Returned
+    else: Other
+    label: Status Groups
+
   id:
     format: ID
     primary_key: true
