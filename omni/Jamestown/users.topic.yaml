@@ -2,19 +2,3 @@
 base_view: users
 
 joins: {}
-
-sample_queries:
-  Sample query has another calc:
-    query:
-      fields: [ users.email, calc_1 ]
-      base_view: users
-      calculations:
-        calc_1:
-          sql: RIGHT(${users.email}, LENGTH(${users.email}) OMNI_FX_MINUS
-            OMNI_FX_FIND('@', ${users.email}))
-          label: Right of @
-      limit: 1000
-      sorts:
-        - field: users.email
-      topic: users
-    description: Sample query has another calc
