@@ -2,3 +2,4 @@ base_view: inventory_items
 
 joins:
   inventory_products: {}
+#comment

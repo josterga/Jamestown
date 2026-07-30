@@ -16,6 +16,7 @@ views:
     ai_context: Customer profiles with demographic details such as name, age,
       gender, location, and acquisition traffic source.
 
+  #comment
   inventory_items:
     ai_context: Physical inventory records tracking product stock, including cost,
       product attributes, and timestamps for when items were created or sold.
