@@ -19,6 +19,9 @@ dimensions:
   user_id:
     format: ID
 
+  user_id_bad:
+    sql: "1"
+
   inventory_item_id:
     format: ID
 
