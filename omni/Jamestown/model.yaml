@@ -16,4 +16,10 @@ access_grants:
 #a change
 #another change
 ai_chat_topics: [ order_items, users ]
+
 #comment
+skills:
+  a_skill:
+    label: a skill
+    description: a skill
+    # required_access_grants: [ embed_grant ]
