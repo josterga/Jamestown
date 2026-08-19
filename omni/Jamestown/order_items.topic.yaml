@@ -1,6 +1,9 @@
 access_filters:
   - field: order_items.pii
     user_attribute: environment_attribute
+default_filters:
+  order_items.status:
+    is: Complete
 
 #branch b changes
 # this is the order_items topic
