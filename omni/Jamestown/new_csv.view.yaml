@@ -1,5 +1,6 @@
-# Reference this view as original_csv
-uploaded_table_name: original_csv::7aa54448-4a28-40a6-912f-4d61e641a9c8
+# Reference this view as new_csv
+renamed_from: original_csv
+uploaded_table_name: original_csv::467a7fa0-5505-41cb-8272-eeee2f9a792c
 
 dimensions:
   omni:
