@@ -1,0 +1,19 @@
+# Reference this view as original_csv
+uploaded_table_name: original_csv::e0190bc1-cefc-48f8-a513-240f63898dee
+
+dimensions:
+  col_1:
+    sql: '"Col 1"'
+    display_order: 0
+
+  col_2:
+    sql: '"Col 2"'
+    display_order: 1
+
+  col_3:
+    sql: '"Col 3"'
+    display_order: 2
+
+measures:
+  count:
+    aggregate_type: count
