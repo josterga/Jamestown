@@ -1,12 +1,5 @@
-access_filters:
-  - field: order_items.pii
-    user_attribute: environment_attribute
-default_filters:
-  order_items.status:
-    is: Complete
+fields: [ all_views.* ]
 
-#branch b changes
-# this is the order_items topic
 joins:
   users: {}
   inventory_items:
@@ -15,58 +8,17 @@ joins:
 
 views:
   order_items:
-    dimensions:
-      pii:
-        sql: CASE WHEN ${status} like 'Complete' THEN 'base' ELSE 'pii' END
-
-    ai_context: Individual line items within customer orders, including sale price,
-      status, and key timestamps like created, shipped, delivered, and returned
-      dates.
+    hidden: true
 
   users:
-    ai_context: Customer profiles with demographic details such as name, age,
-      gender, location, and acquisition traffic source.
+    hidden: true
 
   #comment
   inventory_items:
-    ai_context: Physical inventory records tracking product stock, including cost,
-      product attributes, and timestamps for when items were created or sold.
+    hidden: true
 
   products:
-    ai_context: Product catalog containing item names, categories, departments,
-      SKUs, retail prices, and cost information.
+    hidden: true
 
   distribution_centers:
-    ai_context: Warehouse and fulfillment center locations identified by name and
-      geographic coordinates.
-
-ai_context: output must be all lowercase - and I'm making changes here that
-  override branch-a which is uncommitted
-
-sample_queries:
-  Sample query has calc:
-    query:
-      fields: [ "order_items.created_at[fiscal_year]", order_items.count, calc_1 ]
-      base_view: order_items
-      calculations:
-        calc_1:
-          sql: ${order_items.count} OMNI_FX_MULTIPLY POWER(10, 4)
-          label: Calculation
-      limit: 1000
-      sorts:
-        - field: order_items.created_at[fiscal_year]
-      topic: order_items
-    description: Sample query has calc
-  Sample query no calcs:
-    query:
-      fields: [ order_items.status, order_items.count ]
-      base_view: order_items
-      limit: 1000
-      sorts:
-        - field: order_items.count
-          desc: true
-      topic: order_items
-    description: Sample query no calcs
-# branch b
-# branch b
-# branch b
+    hidden: false
