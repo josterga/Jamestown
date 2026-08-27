@@ -1,4 +1,5 @@
-# Reference this view as freq_baseline_viz
+# Reference this view as new_view_bug_repro
+renamed_from: freq_baseline_viz
 uploaded_table_name: freq_baseline_viz.csv::57026484-07ee-4a4f-8910-b33dd88a6cc0
 
 dimensions:
