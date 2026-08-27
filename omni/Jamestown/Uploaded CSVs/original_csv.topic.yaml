@@ -1,4 +1,4 @@
-base_view: new_csv
+base_view: original_csv
 group_label: Uploaded CSVs
 
 required_access_grants: []
