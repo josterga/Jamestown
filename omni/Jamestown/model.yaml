@@ -1,3 +1,6 @@
+ai_context: this is my branch that I'm going to trigger an overwrite of when I
+  merge another branch to main.
+
 # ai_context: when the prompt references the current user like 'I' or 'my', use
 #   users.your_email to filter based on their email
 fiscal_month_offset: 2
