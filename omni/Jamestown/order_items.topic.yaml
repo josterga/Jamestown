@@ -1,3 +1,4 @@
+required_access_grants: [ embed_grant ]
 access_filters:
   - field: order_items.pii
     user_attribute: environment_attribute

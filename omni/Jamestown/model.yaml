@@ -6,6 +6,7 @@ access_grants:
   embed_grant:
     user_attribute: region
     allowed_values: [ California ]
+    access_boostable: true
 
 # dynamic_schemas:
 #   d_schem:
