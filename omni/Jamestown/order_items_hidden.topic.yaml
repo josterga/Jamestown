@@ -2,6 +2,10 @@ hidden: true
 
 base_view: order_items
 
+access_filters:
+  - field: order_items.status
+    user_attribute: complete
+
 joins:
   users: {}
   inventory_items:
