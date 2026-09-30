@@ -1,0 +1,11 @@
+hidden: true
+
+base_view: order_items
+
+joins:
+  users: {}
+  inventory_items:
+    products:
+      distribution_centers: {}
+    inventory_products: {}
+  parcel_county: {}
