@@ -9,6 +9,7 @@ dimensions:
   shipped_at: {}
   delivered_at: {}
 
+  #
   id:
     format: ID
     primary_key: true
