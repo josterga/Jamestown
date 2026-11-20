@@ -1,0 +1,19 @@
+base_view: users
+label: Repro cache access filter (Pylon 86224)
+description: Test topic. james@omni.co sees every state; any other user sees
+  only rows tagged with their own email (California rows are tagged
+  james.ostergaard@gmail.com).
+
+access_filters:
+  - field: users.repro_viewer
+    user_attribute: omni_user_email
+    values_for_unfiltered: [ james@omni.co ]
+
+joins: {}
+
+views:
+  users:
+    dimensions:
+      repro_viewer:
+        sql: CASE WHEN ${users.state} = 'California' THEN 'james.ostergaard@gmail.com'
+          ELSE 'restricted' END
